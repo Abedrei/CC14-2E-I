@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/* css reset */
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Raleway', sans-serif;
+    background-image: url("Background.jpg");
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #45b6eb;
+    color: #fff;
+    font-size: 1.2vw;
+   }
+
+  #heading {
+    max-width: 750px;
+    margin: 4rem auto;
+    padding: .6rem;
+  }
+  #main {
+      padding: 0% 20% 0% 20%;
+  }
+
+  #title {
+    font-size: 2.2rem;
+    text-align: center;
+    line-height: 1.2;
+    padding: .6rem;
+  }
+
+  #description {
+    font-size: 1.1rem;
+    text-align: center;
+    padding: .2rem;
+  }
+
+  #survey-form {
+    background-color: #2222425d;
+    padding: 3rem 2.5rem;
+    border-radius: 7px;
+  }
+
+  #submit {
+    background: BA33FF;
+    color: #fff;
+    padding: .7rem;
+    font-size: 1.15rem;
+    cursor: pointer;
+  }
+
+  #submit:hover {
+    background: rgb(9, 168, 89);
+  }
+
+.form {
+  width: 100%;
+  padding: .7rem;
+  border-radius: 6px;
+  font-size: 1.0rem;
+  border: none;
+}
+
+  @media only screen and (max-width:480px){
+
+  #main {
+    padding: 0% 0% 0% 0%;
+    }
+  } 
+</style>
+</head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="heading">
+    <h1 id=title>freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </div>
+    <div id="main">
+        <form id="survey-form">
+        <div id="input-fields">
+            <label id="name-label"><b>Name:</b></label>
+            <input id="name" type="name" name="name" class="form" required placeholder="Enter your name"><br>
+            <br>
+            <label id="email-label"><b>Email:</b></label>
+            <input id="email" type="email" name="email" class="form" required placeholder="Enter your email"><br>
+            <br>
+            <label id="number-label"><b>Age:</b></label>
+            <input id="number" type="number" name="number" class="form" min="5" max="99" placeholder="age">
+         </div>
+         <div id="dropdown-div"><br>
+            <label id="dropdown-label"><strong>Which option best describes your current role?
+
+ </strong></label><br>
+            <select id="dropdown" name="code-lang" class="form">
+                <option value="C">Select current role</option>
+                <option value="Python">Python</option>
+                <option value="C#">C#</option>
+                <option value="php">PHP</option>
+                <option value="Js">Java Script</option>
+                <option value="Go">Go (Programming Language)</option>
+                <option value="ruby">Ruby on rails</option>
+                <option value="C++">C++</option>
+                <option value="Java">Java</option>
+            </select>
+         </div>
+         <div id="button-area">
+             <br>
+            <label id="job-label"><b>Would you recommend freeCodeCamp to a friend?</b></label><br>
+            <input type="radio" class="radio-inline" name="gender" value="Definitely" checked>Definitely <br>
+            <input type="radio" class="radio-inline" name="gender" value="Maybe"> Maybe<br>
+            <input type="radio" class="radio-inline" name="gender" value="Not sure"> Not sure<br>
+            
+          </div>
+          
+          <div id="dropdown"><br><br>
+            <label id="dropdown-label"><strong>What is your favorite feature of freeCodeCamp? </strong></label><br>
+            <select id="dropdown" name="code-lang" class="form"><br><br>
+                <option value="C">Select an option</option>
+                <option value="challenges">challenges</option>
+                <option value="Projects">Projects</option>
+                <option value="community">Community</option>
+                <option value="open source">Open source</option>
+               
+         </div>
+          <div id="button-area"><br><br>
+            <label id="os-label"><b>What would you like to see improved? (Check all that apply)</b></label><br>
+            <input type="checkbox" name="tech1" value="Front-end Projects"> Front-end Projects<br>
+            <input type="checkbox" name="tech2" value="Back-end Projects
+"> Back-end Projects
+<br>
+            <input type="checkbox" name="tech3" value="Data Visualization"> Data Visualization<br>
+            <input type="checkbox" name="tech3" value="Challenges"> Challenges<br>
+            <input type="checkbox" name="tech3" value="Open Source Community"> Open Source Community<br>
+			<input type="checkbox" name="tech3" value="Gitter help rooms"> Gitter help rooms<br>
+			<input type="checkbox" name="tech3" value="Videos"> Videos<br>
+			<input type="checkbox" name="tech3" value="City Meetups"> City Meetups<br>
+			<input type="checkbox" name="tech3" value="Wiki"> Wiki<br>
+			<input type="checkbox" name="tech3" value="Forum"> Forum<br>
+			<input type="checkbox" name="tech3" value="Additional Courses"> Additional Courses<br>
+          </div>
+
+
+          <div id="ending"><br><br>
+            <label id="comments-label">Any comments or suggestions?</label><br>
+            <textarea style= height:120px;" class="form" placeholder="Enter your comment here..."></textarea><br><br>
+            <input id="submit" type="submit"  class="form">
+          </div>
+        </form>
+    </div>
+
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html> 
